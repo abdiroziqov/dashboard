@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body {
+        background-image: url("/image/background.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<body>
+<header class="container pt-[50px]">
+    <img src="/image/logo.svg" alt="FB logo">
+</header>
+<main class="max-w-[498px] mx-auto flex flex-col items-center justify-center">
+    <h2 class="text-4xl font-medium text-slate-950 opacity-60 leading-tight">Welcome,</h2>
+    <p class="text-[19px] font-normal text-slate-950 opacity-60 leading-tight mt-5 mb-8">Welcome back to FB. Sign in to continue</p>
+    <form class="w-full">
+        <input id="email" class="input" type="email" placeholder="Enter email address" required>
+        <div class="relative mt-8">
+            <input id="password" class="input" type="password" placeholder="Password" required>
+            <img id="togglePassword" class="absolute top-5 right-7 cursor-pointer" src="/image/eye.svg" alt="Toggle password visibility">
+        </div>
+        <a class="text-[19px] font-normal text-slate-950 opacity-60 text-right float-right mt-5 hover:opacity-100 duration-300" href="/auth/forgot-password.html">Forgot password?</a>
+        <button id="createAccount" class="button-red w-full mt-10" type="submit">Login</button>
+    </form>
+    <p class="text-[19px] font-normal text-slate-950 opacity-60 text-center mt-[50px] mb-10">Have an account? <a class="text-[#FF5035]" href="/auth/signup.html">Sign up</a></p>
+</main>
+<script src="./login.js"></script>
+</body>
+</html>

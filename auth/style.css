@@ -1,0 +1,169 @@
+@import "base.css";
+@import "media.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: max-content;
+  background: #f6f6f6;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+::placeholder {
+  color: #878790;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.2px;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #878790;
+}
+
+
+.input_documents {
+  height: 37px;
+  padding: 9px 16px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+
+}
+.table_head {
+  color: #878790;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.26px;
+  margin-top: 54px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+.input {
+  border-radius: 7px;
+  border: 1px solid #ff5035;
+  background: #fff;
+  color: #09101d;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 19px 0 23px 31px;
+  width: 100%;
+}
+.button-red {
+  border-radius: 7px;
+  border: 1px solid #ff5035;
+  background: #ff5035;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 21px 0;
+}
+.relative {
+  position: relative;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+.flex {
+  display: flex;
+}
+.w-\[622px\] {
+  width: 622px;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-\[498px\] {
+  max-width: 498px;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+.text-center {
+  text-align: center;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-\[19px\] {
+  font-size: 19px;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-normal {
+  font-weight: 400;
+}
+.leading-tight {
+  line-height: 1.25;
+}
+.text-\[\#FF5035\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 80 53 / var(--tw-text-opacity));
+}
+.text-slate-950 {
+  --tw-text-opacity: 1;
+  color: rgb(2 6 23 / var(--tw-text-opacity));
+}
+.opacity-60 {
+  opacity: 0.6;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard | Clients</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../auth/style.css">
+  </head>
+  <body class="bg-violet-50">
+    <!-- Sidebar start-->
+    <div class="w-[290px] py-12 px-[38px] h-screen fixed left-0 top-0 bg-white">
+      <svg
+        width="185"
+        height="44"
+        viewBox="0 0 185 44"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.8365 19.5287C28.5139 17.4008 29.4573 14.7923 29.4573 12.081C29.4224 5.62858 24.2857 0.343173 17.7512 0H17.3669V6.62395L17.6814 6.65836C20.5118 6.93281 22.6783 9.26673 22.6783 12.081C22.6783 14.8954 20.5468 17.2292 17.6814 17.5038L17.3669 17.5381V24.162H18.3104C19.4985 24.162 21.2107 24.3681 22.2939 24.8485C24.705 25.9125 26.4522 28.0061 26.4522 30.7517C26.4522 34.3897 23.3423 37.3414 19.6382 37.3414H9.53955V43.9653H19.7431C27.1861 43.9653 33.2312 38.0278 33.2312 30.7174C33.1963 26.1871 30.7852 21.9312 26.8366 19.5288L26.8365 19.5287Z"
+          fill="#4318FF"
+        />
+        <path
+          d="M14.6762 17.5383H6.74412V6.62414H14.6762V0.000244141H0V43.9998H6.74412V24.1622H14.6762V17.5383Z"
+          fill="#FF5035"
+        />
+        <path
+          d="M45.728 23.9784H53.7208C55.3072 23.9784 56.4843 24.0424 57.2612 24.1703C58.0428 24.3028 58.736 24.5725 59.3501 24.9791C59.9642 25.3904 60.4759 25.9341 60.8854 26.615C61.2948 27.2958 61.4995 28.0635 61.4995 28.9088C61.4995 29.8227 61.2482 30.6681 60.7458 31.4312C60.2434 32.1988 59.5594 32.77 58.6988 33.1539C59.9131 33.5057 60.8435 34.0998 61.4995 34.9405C62.1508 35.7813 62.4765 36.7684 62.4765 37.9061C62.4765 38.8017 62.2671 39.6699 61.8437 40.5153C61.4204 41.3607 60.8435 42.0369 60.1084 42.5441C59.378 43.0468 58.4754 43.3575 57.4008 43.4763C56.7308 43.5449 55.1072 43.5905 52.5344 43.6088H45.728V23.9784V23.9784ZM49.7756 27.241V31.7648H52.4181C53.986 31.7648 54.963 31.742 55.3444 31.6963C56.033 31.6186 56.5773 31.3855 56.9728 30.9971C57.3682 30.6087 57.5636 30.1015 57.5636 29.4709C57.5636 28.8632 57.3915 28.3743 57.0518 27.995C56.7122 27.6157 56.2051 27.3873 55.5352 27.3096C55.1351 27.2639 53.986 27.241 52.0925 27.241H49.7756H49.7756ZM49.7756 35.0274V40.2914H53.516C54.9676 40.2914 55.8934 40.2503 56.2842 40.1726C56.8844 40.0629 57.3729 39.8025 57.7497 39.3867C58.1265 38.9663 58.3172 38.4134 58.3172 37.7142C58.3172 37.1202 58.173 36.6221 57.8799 36.2109C57.5915 35.7996 57.1681 35.4981 56.6191 35.3107C56.0701 35.1234 54.8745 35.0274 53.0368 35.0274H49.7756ZM65.8866 23.9784H69.9341V34.6162C69.9341 36.3069 69.9853 37.399 70.083 37.897C70.2551 38.7013 70.6599 39.3501 71.3019 39.8345C71.9486 40.3234 72.8279 40.5656 73.9445 40.5656C75.075 40.5656 75.931 40.3371 76.5079 39.8756C77.0848 39.4141 77.429 38.852 77.5453 38.1803C77.6616 37.5087 77.7221 36.3982 77.7221 34.8446V23.9784H81.7696V34.3009C81.7696 36.6587 81.6627 38.3266 81.4439 39.2999C81.2253 40.2732 80.8252 41.0956 80.239 41.7674C79.6574 42.4391 78.8758 42.9692 77.8988 43.3667C76.9172 43.7643 75.6424 43.9653 74.0653 43.9653C72.1625 43.9653 70.7203 43.7506 69.7387 43.3164C68.757 42.8824 67.9801 42.3203 67.4079 41.6257C66.8356 40.9311 66.4634 40.2092 66.282 39.4461C66.0168 38.322 65.8866 36.6587 65.8866 34.4609V23.9785L65.8866 23.9784ZM84.9844 37.2482L88.9203 36.8643C89.1575 38.1575 89.6321 39.1034 90.3532 39.7111C91.0743 40.3189 92.0466 40.6204 93.2702 40.6204C94.5636 40.6204 95.5406 40.3509 96.1966 39.8117C96.8525 39.2725 97.1829 38.6419 97.1829 37.9199C97.1829 37.4539 97.0433 37.0609 96.7688 36.7319C96.4943 36.4075 96.0105 36.1241 95.3219 35.8865C94.852 35.722 93.782 35.4387 92.1071 35.0274C89.9531 34.4974 88.4411 33.8485 87.5711 33.0763C86.3476 31.9934 85.7381 30.6728 85.7381 29.1146C85.7381 28.1138 86.0265 27.1725 86.5988 26.2998C87.1757 25.427 88.0038 24.7644 89.0878 24.3075C90.1718 23.8505 91.4745 23.6221 93.0097 23.6221C95.508 23.6221 97.3922 24.1658 98.653 25.2579C99.9184 26.35 100.579 27.8031 100.644 29.6263L96.5967 29.7635C96.4245 28.749 96.0569 28.0225 95.4941 27.5792C94.9311 27.136 94.0844 26.9121 92.9585 26.9121C91.7955 26.9121 90.8836 27.1497 90.2276 27.6249C89.8042 27.9311 89.5902 28.3377 89.5902 28.8495C89.5902 29.3156 89.7903 29.7132 90.1904 30.0422C90.6975 30.4671 91.9304 30.9058 93.889 31.3627C95.8476 31.8151 97.2945 32.2903 98.2297 32.7747C99.1694 33.2636 99.9045 33.9263 100.435 34.7716C100.965 35.6169 101.23 36.6588 101.23 37.8971C101.23 39.0212 100.914 40.0767 100.277 41.0592C99.6393 42.0416 98.7414 42.7727 97.5783 43.248C96.4152 43.7278 94.9637 43.9654 93.2284 43.9654C90.7022 43.9654 88.7622 43.3942 87.4083 42.2473C86.0545 41.1049 85.2496 39.437 84.9845 37.2482L84.9844 37.2482ZM104.524 43.6089V23.9785H108.572V43.6089H104.524ZM112.419 43.6089V23.9785H116.336L124.562 37.134V23.9785H128.302V43.6089H124.259L116.16 30.7047V43.6089H112.419ZM132.578 43.6089V23.9785H147.372V27.2959H136.625V31.6552H146.618V34.9726H136.625V40.2915H147.763V43.609H132.578V43.6089ZM150.136 37.2482L154.072 36.8643C154.309 38.1575 154.783 39.1034 155.504 39.7111C156.226 40.3189 157.198 40.6204 158.421 40.6204C159.715 40.6204 160.692 40.3509 161.348 39.8117C162.004 39.2725 162.334 38.6419 162.334 37.9199C162.334 37.4539 162.195 37.0609 161.92 36.7319C161.646 36.4075 161.162 36.1241 160.473 35.8865C160.003 35.722 158.933 35.4387 157.258 35.0274C155.104 34.4974 153.592 33.8485 152.722 33.0763C151.499 31.9934 150.889 30.6728 150.889 29.1146C150.889 28.1138 151.178 27.1725 151.75 26.2998C152.327 25.427 153.155 24.7644 154.239 24.3075C155.323 23.8505 156.626 23.6221 158.161 23.6221C160.659 23.6221 162.543 24.1658 163.804 25.2579C165.07 26.35 165.73 27.8031 165.795 29.6263L161.748 29.7635C161.576 28.749 161.208 28.0225 160.645 27.5792C160.082 27.136 159.236 26.9121 158.11 26.9121C156.947 26.9121 156.035 27.1497 155.379 27.6249C154.955 27.9311 154.741 28.3377 154.741 28.8495C154.741 29.3156 154.941 29.7132 155.342 30.0422C155.849 30.4671 157.082 30.9058 159.04 31.3627C160.999 31.8151 162.446 32.2903 163.381 32.7747C164.321 33.2636 165.056 33.9263 165.586 34.7716C166.116 35.6169 166.382 36.6588 166.382 37.8971C166.382 39.0212 166.065 40.0767 165.428 41.0592C164.79 42.0416 163.893 42.7727 162.73 43.248C161.566 43.7278 160.115 43.9654 158.38 43.9654C155.853 43.9654 153.913 43.3942 152.56 42.2473C151.206 41.1049 150.401 39.437 150.136 37.2482L150.136 37.2482ZM168.754 37.2482L172.69 36.8643C172.927 38.1575 173.402 39.1034 174.123 39.7111C174.844 40.3189 175.816 40.6204 177.04 40.6204C178.333 40.6204 179.31 40.3509 179.966 39.8117C180.622 39.2725 180.953 38.6419 180.953 37.9199C180.953 37.4539 180.813 37.0609 180.539 36.7319C180.264 36.4075 179.78 36.1241 179.092 35.8865C178.622 35.722 177.552 35.4387 175.877 35.0274C173.723 34.4974 172.211 33.8485 171.341 33.0763C170.117 31.9934 169.508 30.6728 169.508 29.1146C169.508 28.1138 169.796 27.1725 170.369 26.2998C170.946 25.427 171.774 24.7644 172.858 24.3075C173.942 23.8505 175.244 23.6221 176.78 23.6221C179.278 23.6221 181.162 24.1658 182.423 25.2579C183.688 26.35 184.349 27.8031 184.414 29.6263L180.367 29.7635C180.194 28.749 179.827 28.0225 179.264 27.5792C178.701 27.136 177.854 26.9121 176.728 26.9121C175.565 26.9121 174.653 27.1497 173.997 27.6249C173.574 27.9311 173.36 28.3377 173.36 28.8495C173.36 29.3156 173.56 29.7132 173.96 30.0422C174.467 30.4671 175.7 30.9058 177.659 31.3627C179.617 31.8151 181.064 32.2903 181.999 32.7747C182.939 33.2636 183.674 33.9263 184.205 34.7716C184.735 35.6169 185 36.6588 185 37.8971C185 39.0212 184.684 40.0767 184.047 41.0592C183.409 42.0416 182.511 42.7727 181.348 43.248C180.185 43.7278 178.734 43.9654 176.998 43.9654C174.472 43.9654 172.532 43.3942 171.178 42.2473C169.824 41.1049 169.019 39.437 168.754 37.2482L168.754 37.2482Z"
+          fill="#4318FF"
+        />
+      </svg>
+      <ul id="sidebar" class="my-12 space-y-4">
+        <!-- Dynamic sidebar menu -->
+      </ul>
+    </div>
+    <!-- Sidebar end -->
+    <div class="ml-[290px] w-[calc(100vw-290px)] py-12 px-8 flex gap-5">
+      <div
+        class="bg-white rounded-[22px] shadow w-full h-full pt-6 pl-10 pb-6 pr-8"
+      >
+        <p class="text-indigo-600 text-[34px] font-bold">Documents</p>
+  
+
+      <!-- Actions section -->
+
+      <div>
+      
+      <div>
+
+            <!-- Actions section -->
+
+            <div class="flex items-center justify-between">
+                <div class="flex items-center mt-9">
+                    <div class="flex">
+                        <!-- Status Dropdown -->
+                        <div>
+                            <select
+                                class="px-4 py-2 border border-gray-300 rounded-[7px] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-indigo-500 mr-4">
+                                <option>Status</option>
+                                <!-- Add more options as needed -->
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                            </select>
+                        </div>
+
+                        <!-- Date Create -->
+                        <div class="flex items-center space-x-2">
+                            <input type="date" placeholder="Data create" class="input_documents" />
+                        </div>
+
+                        <!-- Arrow Icon -->
+                        <svg class="mx-[7px]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.4633 13.9734L16.6195 9.09844C16.5494 9.00944 16.4601 8.93748 16.3582 8.88796C16.2563 8.83844 16.1445 8.81264 16.0312 8.8125H14.5125C14.3555 8.8125 14.2688 8.99297 14.3648 9.11719L17.7469 13.4062H3.5625C3.45937 13.4062 3.375 13.4906 3.375 13.5938V15C3.375 15.1031 3.45937 15.1875 3.5625 15.1875H19.8727C20.5008 15.1875 20.85 14.4656 20.4633 13.9734Z"
+                                fill="#757575" />
+                        </svg>
+
+                        <!-- Date Update -->
+                        <input type="date" placeholder="Data update" class="input_documents" />
+
+                        <!-- Number Search -->
+                        <input type="search" placeholder="Number" class="input_documents ml-4" />
+                    </div>
+                    <button>
+
+                    </button>
+                </div>
+                <button
+                    class="flex bg-indigo-600 rounded-[7px] py-3 items-center gap-1 pl-2 pr-4 gap-1 text-white text-sm font-medium">
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.7237 0.5H1.25502C1.18549 0.505258 1.12057 0.536098 1.07328 0.58633C1.02598 0.636563 0.99981 0.702472 1.00002 0.770833V1.66667C0.999378 1.75849 1.01737 1.84951 1.05293 1.93446C1.0885 2.0194 1.14094 2.09656 1.2072 2.16146L7.5822 8.41146V13.6198L11.4338 15.5V8.40104L17.8087 2.15104C17.9307 2.02207 17.999 1.85296 18 1.67708V0.770833C18 0.699004 17.9709 0.630116 17.9191 0.579325C17.8673 0.528534 17.797 0.5 17.7237 0.5Z"
+                            stroke="white" />
+                    </svg>
+                    Filter
+                </button>
+            </div>
+
+            <div class="flex justify-between w-full table_head ">
+                <p>Description</p>
+                <p>Data create</p>
+                <p>Data update</p>
+                <p>Number</p>
+                <p>Dokument</p>
+                <p>Data send</p>
+                <p>Wartość netto/brutto</p>
+                <p class="w-[61px]">Status payment</p>
+                <p>Edit</p>
+                <p>Delete</p>
+                <p class="w-[61px]">More actions</p>
+            </div>
+            <div class="flex gap-5 mt-6">
+                <img src="/image/folder.svg" alt="image" />
+                <div
+                    class="h-[53px] bg-white rounded-[5px] group hover:bg-[#4318FF] duration-300 border border-slate-200 w-full flex justify-between px-3 items-center text-zinc-700 text-[13px] font-normal cursor-pointer">
+                    <p class="text-red-500 group-hover:text-white duration-300">Potwierdzrone</p>
+                    <p class="group-hover:text-white duration-300">21-03-2022</p>
+                    <p class="group-hover:text-white duration-300">21-03-2022</p>
+                    <p class="group-hover:text-white duration-300">1596</p>
+                    <p class="group-hover:text-white duration-300">PROFORMA/7/03/2022</p>
+                    <p class="group-hover:text-white duration-300">21-03-2022</p>
+                    <p class="group-hover:text-white duration-300">305.99/376.37PLN </p>
+                    <p class="p-2.5 bg-red-500 rounded-[7px] shadow gap-2.5 text-white text-[13px] font-normal ">Waiting
+                    </p>
+                    <p>
+                        <svg class="hover-fill" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle opacity="0.1" cx="15" cy="15" r="15" fill="#5D5FEF" />
+                            <path class="group-hover:fill-white" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.834 18.568L17.739 13.518C17.9512 13.2456 18.0267 12.9308 17.956 12.6102C17.8947 12.3188 17.7154 12.0417 17.4466 11.8315L16.791 11.3107C16.2204 10.8568 15.5129 10.9046 15.1073 11.4254L14.6687 11.9944C14.6121 12.0656 14.6263 12.1707 14.697 12.228C14.697 12.228 15.8053 13.1166 15.8289 13.1358C15.9044 13.2074 15.961 13.303 15.9751 13.4176C15.9987 13.6422 15.8431 13.8524 15.612 13.8811C15.5035 13.8954 15.3998 13.862 15.3243 13.7999L14.1594 12.873C14.1028 12.8305 14.0179 12.8395 13.9707 12.8969L11.2023 16.4801C11.0231 16.7047 10.9618 16.9961 11.0231 17.278L11.3768 18.8116C11.3957 18.8928 11.4664 18.9502 11.5513 18.9502L13.1077 18.9311C13.3906 18.9263 13.6547 18.7973 13.834 18.568ZM16.0133 18.0903H18.5511C18.7987 18.0903 19.0001 18.2943 19.0001 18.5451C19.0001 18.7964 18.7987 18.9999 18.5511 18.9999H16.0133C15.7657 18.9999 15.5643 18.7964 15.5643 18.5451C15.5643 18.2943 15.7657 18.0903 16.0133 18.0903Z"
+                                fill="#5D5FEF" />
+                        </svg>
+                    </p>
+                    <p><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle opacity="0.05" cx="15" cy="15" r="15" fill="#FF0000" />
+                            <path class="group-hover:fill-white" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.8356 11.6575C19.0345 11.6575 19.2 11.8226 19.2 12.0327V12.2269C19.2 12.4318 19.0345 12.602 18.8356 12.602H10.3649C10.1655 12.602 10 12.4318 10 12.2269V12.0327C10 11.8226 10.1655 11.6575 10.3649 11.6575H11.8551C12.1578 11.6575 12.4213 11.4423 12.4894 11.1387L12.5674 10.7902C12.6887 10.3154 13.0879 10 13.5447 10H15.6553C16.1072 10 16.5108 10.3154 16.6276 10.7651L16.7111 11.1382C16.7787 11.4423 17.0422 11.6575 17.3454 11.6575H18.8356ZM18.0785 18.7575C18.2341 17.3075 18.5065 13.8626 18.5065 13.8279C18.5164 13.7226 18.4821 13.6229 18.414 13.5427C18.341 13.4675 18.2485 13.4231 18.1466 13.4231H11.0572C10.9548 13.4231 10.8574 13.4675 10.7898 13.5427C10.7212 13.6229 10.6874 13.7226 10.6924 13.8279C10.6933 13.8342 10.703 13.9556 10.7194 14.1585C10.792 15.0597 10.9942 17.5697 11.1248 18.7575C11.2173 19.6325 11.7914 20.1824 12.623 20.2024C13.2648 20.2172 13.9259 20.2223 14.6019 20.2223C15.2387 20.2223 15.8854 20.2172 16.547 20.2024C17.4074 20.1876 17.9811 19.6473 18.0785 18.7575Z"
+                                fill="#FF0000" />
+                        </svg>
+                    </p>
+                    <p id="open-modal-btn"> <svg width="5" height="20" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-white" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.5444 2.26411C4.5444 3.47531 3.52736 4.45822 2.2722 4.45822C1.01704 4.45822 0 3.47531 0 2.26411C0 1.05201 1.01704 0.0699997 2.2722 0.0699997C3.52736 0.0699997 4.5444 1.05201 4.5444 2.26411ZM4.5444 10.035C4.5444 11.239 3.52736 12.2146 2.2722 12.2146C1.01704 12.2146 0 11.239 0 10.035C0 8.83105 1.01704 7.85538 2.2722 7.85538C3.52736 7.85538 4.5444 8.83105 4.5444 10.035ZM4.5444 17.8059C4.5444 19.018 3.52736 20 2.2722 20C1.01704 20 0 19.018 0 17.8059C0 16.5947 1.01704 15.6118 2.2722 15.6118C3.52736 15.6118 4.5444 16.5947 4.5444 17.8059Z"
+                                fill="#D0D7DD" fill-opacity="0.72727" />
+                        </svg>
+                    </p>
+                </div>
+
+
+
+            </div>
+            <div class="border border-slate-200 rounded-[10px] ml-12">
+                <div class="bg-indigo-100 flex py-2 px-4  text-indigo-500 text-[13px] font-normal">
+                    <p>Lp.</p>
+                    <p class="ml-[97px]">Nazwa</p>
+                    <p class="ml-[177px]">Kod</p>
+                    <p class="ml-[133px]">Ilość</p>
+                    <p class="ml-[139px]">Wartość netto</p>
+                    <p class="ml-[44px]">Wartość brutto</p>
+                </div>
+                <div class="flex py-2 px-4 text-zinc-700 text-[13px] font-normal">
+                    <p>1</p>
+                    <p class="ml-[97px]">M5HybcidGLASSBacterio</p>
+                    <p class="ml-[56px]">TRANSPORT</p>
+                    <p class="ml-[98px]">2</p>
+                    <p class="ml-[160px]">305.99 PLN</p>
+                    <p class="ml-[64px]">376.37 PLN</p>
+                </div>
+                <div class="flex py-2 px-4 text-zinc-700 text-[13px] font-normal">
+                    <p>1</p>
+                    <p class="ml-[97px]">M5HybcidGLASSBacterio</p>
+                    <p class="ml-[56px]">TRANSPORT</p>
+                    <p class="ml-[98px]">2</p>
+                    <p class="ml-[160px]">305.99 PLN</p>
+                    <p class="ml-[64px]">376.37 PLN</p>
+                </div>
+                <button
+                    class="h-10 p-2.5 bg-indigo-600 rounded-[7px] shadow justify-center items-center gap-2.5 inline-flex text-center text-neutral-50 text-[13px] font-normal mt-8 mb-2 ml-2">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.75 16.9874L12.1312 15.3687L11.25 16.2499L13.75 18.7499L18.75 13.7499L17.8688 12.8687L13.75 16.9874Z"
+                            fill="white" />
+                        <path
+                            d="M9.375 17.5002H5V2.50021H10V6.25021C10.001 6.58143 10.133 6.8988 10.3672 7.133C10.6014 7.36721 10.9188 7.49922 11.25 7.50021H15V11.2502H16.25V6.25021C16.2522 6.16807 16.2366 6.08643 16.2042 6.0109C16.1719 5.93538 16.1235 5.86776 16.0625 5.81271L11.6875 1.43771C11.6325 1.37668 11.5649 1.32831 11.4893 1.29594C11.4138 1.26356 11.3321 1.24797 11.25 1.25021H5C4.66878 1.2512 4.35142 1.38322 4.11721 1.61742C3.883 1.85163 3.75099 2.169 3.75 2.50021V17.5002C3.75099 17.8314 3.883 18.1488 4.11721 18.383C4.35142 18.6172 4.66878 18.7492 5 18.7502H9.375V17.5002ZM11.25 2.75021L14.75 6.25021H11.25V2.75021Z"
+                            fill="white" />
+                    </svg>
+
+                    Payment checkout
+            </div>
+            
+
+            <div class="flex gap-5 items-center justify-center mt-12">
+                <p class="text-zinc-700 text-[13px]">Page</p>
+                <div class="flex gap-4">
+                        <img class="cursor-pointer" src="/image/next.svg" alt="image">
+
+                        <p class="w-6 h-6 bg-indigo-600 rounded-full shadow text-center text-white text-[13px] font-normal flex justify-center items-center">1
+                        </p>
+                        <img class="rotate-180 cursor-pointer" src="/image/next.svg" alt="image">
+
+                        
+                </div>
+                <select
+                class="border-b border-[#4318FF] pb-1">
+                <option>10</option>
+                <option value="option1">20</option>
+                <option value="option2">30</option>
+            </select>
+            </div>
+        </div>
+
+
+
+        <!-- Modal -->
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-end hidden">
+            <div class="modal-content bg-white rounded-lg p-6 w-full max-w-md h-full  shadow-lg relative">
+                <button class="close-button absolute top-2 right-2 text-gray-500 hover:text-gray-700">&times;</button>
+                <h2 class="text-gray-700 text-[32px] font-semibold mb-2 capitalize">Fund Wallet</h2>
+                <p class="text-gray-700 text-base font-normal mb-8">To fund wallet provide the details below</p>
+                    <span class="mb-1 text-gray-700 text-sm font-normal">Wallet Balance</span>
+                    <h3 class="text-indigo-600 text-3xl font-medium">$ 3,041,730</h3>
+                    <hr class="bg-[#A7A9C0] w-[100px] mt-6 mb-8">
+                <form>
+                    <label for="amount" class="text-sky-900 text-[15px] font-medium block mb-2">Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter Amount" class="w-full h-16 bg-white rounded border border-stone-300 text-neutral-700 text-sm font-normal p-5" >
+                    
+                    <div class="flex items-center gap-8 my-6">
+                        <label class="flex items-center">
+                            <input type="checkbox" id="bank-transfer" name="payment-method" class="mr-2" checked>
+                            Bank Transfer
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="fund-by-card" name="payment-method" class="mr-2">
+                            Fund by Card
+                        </label>
+                    </div>
+        
+                    <div class="bg-white rounded-[3px] shadow border-dashed border-sky-950/20 py-6">
+                        <p class="text-gray-700">Account Number: <strong>0123456789</strong></p>
+                        <p class="text-gray-700">Bank Name: <strong>Guaranty Trust Bank Plc.</strong></p>
+                        <p class="text-gray-700">Beneficiary Name: <strong>Adebola Toheeb</strong></p>
+                    </div>
+        
+                    <label for="description" class="block text-gray-700 mb-2">Description</label>
+                    <input type="text" id="description" name="description" placeholder="Write a Description" class="w-full p-2 border border-gray-300 rounded mb-4">
+        
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">PROCEED</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <script src="../scripts/sidebar.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const modal = document.getElementById('modal');
+          const openModalBtn = document.getElementById('open-modal-btn');
+          const closeBtn = document.querySelector('.close-button');
+  
+          openModalBtn.addEventListener('click', () => {
+              modal.classList.remove('hidden');
+              modal.classList.add('flex');
+          });
+  
+          closeBtn.addEventListener('click', () => {
+              modal.classList.add('hidden');
+              modal.classList.remove('flex');
+          });
+  
+          window.addEventListener('click', (event) => {
+              if (event.target === modal) {
+                  modal.classList.add('hidden');
+                  modal.classList.remove('flex');
+              }
+          });
+      });
+  </script>
+  </body>
+</html>

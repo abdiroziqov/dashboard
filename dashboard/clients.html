@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard | Clients</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-violet-50 relative">
+    <!-- Sidebar start-->
+    <div class="w-[290px] py-12 px-[38px] h-screen fixed left-0 top-0 bg-white">
+      <svg
+        width="185"
+        height="44"
+        viewBox="0 0 185 44"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.8365 19.5287C28.5139 17.4008 29.4573 14.7923 29.4573 12.081C29.4224 5.62858 24.2857 0.343173 17.7512 0H17.3669V6.62395L17.6814 6.65836C20.5118 6.93281 22.6783 9.26673 22.6783 12.081C22.6783 14.8954 20.5468 17.2292 17.6814 17.5038L17.3669 17.5381V24.162H18.3104C19.4985 24.162 21.2107 24.3681 22.2939 24.8485C24.705 25.9125 26.4522 28.0061 26.4522 30.7517C26.4522 34.3897 23.3423 37.3414 19.6382 37.3414H9.53955V43.9653H19.7431C27.1861 43.9653 33.2312 38.0278 33.2312 30.7174C33.1963 26.1871 30.7852 21.9312 26.8366 19.5288L26.8365 19.5287Z"
+          fill="#4318FF"
+        />
+        <path
+          d="M14.6762 17.5383H6.74412V6.62414H14.6762V0.000244141H0V43.9998H6.74412V24.1622H14.6762V17.5383Z"
+          fill="#FF5035"
+        />
+        <path
+          d="M45.728 23.9784H53.7208C55.3072 23.9784 56.4843 24.0424 57.2612 24.1703C58.0428 24.3028 58.736 24.5725 59.3501 24.9791C59.9642 25.3904 60.4759 25.9341 60.8854 26.615C61.2948 27.2958 61.4995 28.0635 61.4995 28.9088C61.4995 29.8227 61.2482 30.6681 60.7458 31.4312C60.2434 32.1988 59.5594 32.77 58.6988 33.1539C59.9131 33.5057 60.8435 34.0998 61.4995 34.9405C62.1508 35.7813 62.4765 36.7684 62.4765 37.9061C62.4765 38.8017 62.2671 39.6699 61.8437 40.5153C61.4204 41.3607 60.8435 42.0369 60.1084 42.5441C59.378 43.0468 58.4754 43.3575 57.4008 43.4763C56.7308 43.5449 55.1072 43.5905 52.5344 43.6088H45.728V23.9784V23.9784ZM49.7756 27.241V31.7648H52.4181C53.986 31.7648 54.963 31.742 55.3444 31.6963C56.033 31.6186 56.5773 31.3855 56.9728 30.9971C57.3682 30.6087 57.5636 30.1015 57.5636 29.4709C57.5636 28.8632 57.3915 28.3743 57.0518 27.995C56.7122 27.6157 56.2051 27.3873 55.5352 27.3096C55.1351 27.2639 53.986 27.241 52.0925 27.241H49.7756H49.7756ZM49.7756 35.0274V40.2914H53.516C54.9676 40.2914 55.8934 40.2503 56.2842 40.1726C56.8844 40.0629 57.3729 39.8025 57.7497 39.3867C58.1265 38.9663 58.3172 38.4134 58.3172 37.7142C58.3172 37.1202 58.173 36.6221 57.8799 36.2109C57.5915 35.7996 57.1681 35.4981 56.6191 35.3107C56.0701 35.1234 54.8745 35.0274 53.0368 35.0274H49.7756ZM65.8866 23.9784H69.9341V34.6162C69.9341 36.3069 69.9853 37.399 70.083 37.897C70.2551 38.7013 70.6599 39.3501 71.3019 39.8345C71.9486 40.3234 72.8279 40.5656 73.9445 40.5656C75.075 40.5656 75.931 40.3371 76.5079 39.8756C77.0848 39.4141 77.429 38.852 77.5453 38.1803C77.6616 37.5087 77.7221 36.3982 77.7221 34.8446V23.9784H81.7696V34.3009C81.7696 36.6587 81.6627 38.3266 81.4439 39.2999C81.2253 40.2732 80.8252 41.0956 80.239 41.7674C79.6574 42.4391 78.8758 42.9692 77.8988 43.3667C76.9172 43.7643 75.6424 43.9653 74.0653 43.9653C72.1625 43.9653 70.7203 43.7506 69.7387 43.3164C68.757 42.8824 67.9801 42.3203 67.4079 41.6257C66.8356 40.9311 66.4634 40.2092 66.282 39.4461C66.0168 38.322 65.8866 36.6587 65.8866 34.4609V23.9785L65.8866 23.9784ZM84.9844 37.2482L88.9203 36.8643C89.1575 38.1575 89.6321 39.1034 90.3532 39.7111C91.0743 40.3189 92.0466 40.6204 93.2702 40.6204C94.5636 40.6204 95.5406 40.3509 96.1966 39.8117C96.8525 39.2725 97.1829 38.6419 97.1829 37.9199C97.1829 37.4539 97.0433 37.0609 96.7688 36.7319C96.4943 36.4075 96.0105 36.1241 95.3219 35.8865C94.852 35.722 93.782 35.4387 92.1071 35.0274C89.9531 34.4974 88.4411 33.8485 87.5711 33.0763C86.3476 31.9934 85.7381 30.6728 85.7381 29.1146C85.7381 28.1138 86.0265 27.1725 86.5988 26.2998C87.1757 25.427 88.0038 24.7644 89.0878 24.3075C90.1718 23.8505 91.4745 23.6221 93.0097 23.6221C95.508 23.6221 97.3922 24.1658 98.653 25.2579C99.9184 26.35 100.579 27.8031 100.644 29.6263L96.5967 29.7635C96.4245 28.749 96.0569 28.0225 95.4941 27.5792C94.9311 27.136 94.0844 26.9121 92.9585 26.9121C91.7955 26.9121 90.8836 27.1497 90.2276 27.6249C89.8042 27.9311 89.5902 28.3377 89.5902 28.8495C89.5902 29.3156 89.7903 29.7132 90.1904 30.0422C90.6975 30.4671 91.9304 30.9058 93.889 31.3627C95.8476 31.8151 97.2945 32.2903 98.2297 32.7747C99.1694 33.2636 99.9045 33.9263 100.435 34.7716C100.965 35.6169 101.23 36.6588 101.23 37.8971C101.23 39.0212 100.914 40.0767 100.277 41.0592C99.6393 42.0416 98.7414 42.7727 97.5783 43.248C96.4152 43.7278 94.9637 43.9654 93.2284 43.9654C90.7022 43.9654 88.7622 43.3942 87.4083 42.2473C86.0545 41.1049 85.2496 39.437 84.9845 37.2482L84.9844 37.2482ZM104.524 43.6089V23.9785H108.572V43.6089H104.524ZM112.419 43.6089V23.9785H116.336L124.562 37.134V23.9785H128.302V43.6089H124.259L116.16 30.7047V43.6089H112.419ZM132.578 43.6089V23.9785H147.372V27.2959H136.625V31.6552H146.618V34.9726H136.625V40.2915H147.763V43.609H132.578V43.6089ZM150.136 37.2482L154.072 36.8643C154.309 38.1575 154.783 39.1034 155.504 39.7111C156.226 40.3189 157.198 40.6204 158.421 40.6204C159.715 40.6204 160.692 40.3509 161.348 39.8117C162.004 39.2725 162.334 38.6419 162.334 37.9199C162.334 37.4539 162.195 37.0609 161.92 36.7319C161.646 36.4075 161.162 36.1241 160.473 35.8865C160.003 35.722 158.933 35.4387 157.258 35.0274C155.104 34.4974 153.592 33.8485 152.722 33.0763C151.499 31.9934 150.889 30.6728 150.889 29.1146C150.889 28.1138 151.178 27.1725 151.75 26.2998C152.327 25.427 153.155 24.7644 154.239 24.3075C155.323 23.8505 156.626 23.6221 158.161 23.6221C160.659 23.6221 162.543 24.1658 163.804 25.2579C165.07 26.35 165.73 27.8031 165.795 29.6263L161.748 29.7635C161.576 28.749 161.208 28.0225 160.645 27.5792C160.082 27.136 159.236 26.9121 158.11 26.9121C156.947 26.9121 156.035 27.1497 155.379 27.6249C154.955 27.9311 154.741 28.3377 154.741 28.8495C154.741 29.3156 154.941 29.7132 155.342 30.0422C155.849 30.4671 157.082 30.9058 159.04 31.3627C160.999 31.8151 162.446 32.2903 163.381 32.7747C164.321 33.2636 165.056 33.9263 165.586 34.7716C166.116 35.6169 166.382 36.6588 166.382 37.8971C166.382 39.0212 166.065 40.0767 165.428 41.0592C164.79 42.0416 163.893 42.7727 162.73 43.248C161.566 43.7278 160.115 43.9654 158.38 43.9654C155.853 43.9654 153.913 43.3942 152.56 42.2473C151.206 41.1049 150.401 39.437 150.136 37.2482L150.136 37.2482ZM168.754 37.2482L172.69 36.8643C172.927 38.1575 173.402 39.1034 174.123 39.7111C174.844 40.3189 175.816 40.6204 177.04 40.6204C178.333 40.6204 179.31 40.3509 179.966 39.8117C180.622 39.2725 180.953 38.6419 180.953 37.9199C180.953 37.4539 180.813 37.0609 180.539 36.7319C180.264 36.4075 179.78 36.1241 179.092 35.8865C178.622 35.722 177.552 35.4387 175.877 35.0274C173.723 34.4974 172.211 33.8485 171.341 33.0763C170.117 31.9934 169.508 30.6728 169.508 29.1146C169.508 28.1138 169.796 27.1725 170.369 26.2998C170.946 25.427 171.774 24.7644 172.858 24.3075C173.942 23.8505 175.244 23.6221 176.78 23.6221C179.278 23.6221 181.162 24.1658 182.423 25.2579C183.688 26.35 184.349 27.8031 184.414 29.6263L180.367 29.7635C180.194 28.749 179.827 28.0225 179.264 27.5792C178.701 27.136 177.854 26.9121 176.728 26.9121C175.565 26.9121 174.653 27.1497 173.997 27.6249C173.574 27.9311 173.36 28.3377 173.36 28.8495C173.36 29.3156 173.56 29.7132 173.96 30.0422C174.467 30.4671 175.7 30.9058 177.659 31.3627C179.617 31.8151 181.064 32.2903 181.999 32.7747C182.939 33.2636 183.674 33.9263 184.205 34.7716C184.735 35.6169 185 36.6588 185 37.8971C185 39.0212 184.684 40.0767 184.047 41.0592C183.409 42.0416 182.511 42.7727 181.348 43.248C180.185 43.7278 178.734 43.9654 176.998 43.9654C174.472 43.9654 172.532 43.3942 171.178 42.2473C169.824 41.1049 169.019 39.437 168.754 37.2482L168.754 37.2482Z"
+          fill="#4318FF"
+        />
+      </svg>
+      <ul id="sidebar" class="my-12 space-y-4">
+        <!-- Dynamic sidebar menu -->
+      </ul>
+    </div>
+    <!-- Sidebar end -->
+    <!-- Clients add modal start-->
+    <div
+      id="modal"
+      class="w-full hidden h-screen bg-gray-950/30 z-50 flex items-center justify-center absolute left-0 top-0"
+    >
+      <div class="h-fit space-y-3 w-[380px] rounded-lg bg-white px-5 py-4">
+        <div
+          class="flex items-center justify-between w-full border-b border-gray-200 pb-2"
+        >
+          <p>Mijoz yaratish</p>
+          <svg
+          id="modal-close"
+            class="cursor-pointer transition-all duration-300 hover:scale-110"
+            width="11"
+            height="11"
+            viewBox="0 0 11 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1.29622L9.70378 0L5.49999 4.20377L1.29622 0L0 1.29622L4.20377 5.49999L0 9.70378L1.29622 11L5.49999 6.79623L9.70376 11L11 9.70378L6.79623 5.49999L11 1.29622Z"
+              fill="#00140E"
+            />
+          </svg>
+        </div>
+        <form onsubmit="createClient(event)">
+          <div>
+            <label
+              for="username"
+              class="block text-zinc-700 text-[10px] font-semibold tracking-wide"
+              >Username</label
+            >
+            <input
+              type="text"
+              id="username"
+              class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+              placeholder=""
+            />
+          </div>
+          <div>
+            <label
+              for="phone"
+              class="block text-zinc-700 text-[10px] font-semibold tracking-wide"
+              >Mijoz raqami</label
+            >
+            <input
+              type="text"
+              id="phone"
+              class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+              placeholder=""
+            />
+          </div>
+          <div>
+            <label
+              for="payment"
+              class="block text-zinc-700 text-[10px] font-semibold tracking-wide"
+              >Total payments</label
+            >
+            <input
+              type="text"
+              id="payment"
+              class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+              placeholder=""
+            />
+          </div>
+          <div>
+            <label
+              for="total-rides"
+              class="block text-zinc-700 text-[10px] font-semibold tracking-wide"
+              >Total rides</label
+            >
+            <input
+              type="text"
+              id="total-rides"
+              class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+              placeholder=""
+            />
+          </div>
+          <div>
+            <label
+              for="total-finished"
+              class="block text-zinc-700 text-[10px] font-semibold tracking-wide"
+              >Total finished</label
+            >
+            <input
+              type="text"
+              id="total-finished"
+              class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+              placeholder=""
+            />
+          </div>
+          <div>
+            <label
+              for="location"
+              class="block text-zinc-700 text-[10px] font-semibold tracking-wide"
+              >Home location</label
+            >
+            <textarea
+              rows="7"
+              id="location"
+              class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+              placeholder=""
+            ></textarea>
+          </div>
+          <div class="flex justify-end w-full">
+            <button
+              class="h-8 px-7 py-0.5 bg-indigo-600 text-neutral-50 text-xs font-normal leading-7 tracking-wide rounded-lg shadow justify-center items-center inline-flex"
+            >
+              Saqlash
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Clients add modal end-->
+    <div class="ml-[290px] w-[calc(100vw-290px)] p-8">
+      <!-- Navbar start -->
+      <div class="flex justify-between items-center mb-5">
+        <div class="flex items-center gap-16">
+          <div class="flex items-center divide-x divide-gray-200 gap-5">
+            <p class="text-neutral-800 text-base font-bold leading-none">
+              Clients
+            </p>
+            <p id="clients-count" class="pl-5 text-gray-500 text-base font-medium leading-none">
+              0
+            </p>
+          </div>
+          <form class="w-[230px]">
+            <label
+              for="default-search"
+              class="text-sm font-medium text-gray-900 sr-only"
+              >Search by Username</label
+            >
+            <div class="relative z-0">
+              <div
+                class="absolute inset-y-0 end-4 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.66683 14C11.1646 14 14.0002 11.1645 14.0002 7.66665C14.0002 4.16884 11.1646 1.33331 7.66683 1.33331C4.16903 1.33331 1.3335 4.16884 1.3335 7.66665C1.3335 11.1645 4.16903 14 7.66683 14Z"
+                    stroke="#878EAB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6668 14.6666L13.3335 13.3333"
+                    stroke="#878EAB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full p-3 ps-4 text-sm text-gray-900 rounded-full bg-gray-50"
+                placeholder="Search by Username"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="flex items-center gap-[18px]">
+          <button
+            id="add-btn"
+            class="text-slate-600 gap-2 flex items-center text-xs font-semibold p-3 bg-white rounded leading-normal"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.00586 5.20013L7.00586 1.00001L5.80706 2.20004"
+                stroke="#4318FF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.00579 0.999977L8.20459 2.20001"
+                stroke="#4318FF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1 7.60004H3.64336C3.87113 7.60004 4.07493 7.72604 4.17682 7.93005L4.87812 9.33409C5.08192 9.7421 5.4955 10.0001 5.95105 10.0001H8.06693C8.52248 10.0001 8.93606 9.7421 9.13986 9.33409L9.84116 7.93005C9.94306 7.72604 10.1528 7.60004 10.3746 7.60004H12.988"
+                stroke="#4318FF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4.00897 2.27771C1.88709 2.58972 1.01196 3.83776 1.01196 6.39983V8.7999C1.01196 11.8 2.21076 13 5.20777 13H8.80417C11.8012 13 13 11.8 13 8.7999V6.39983C13 3.83776 12.1248 2.58972 10.003 2.27771"
+                stroke="#4318FF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span>Create</span>
+          </button>
+          <button
+            id="filter-btn"
+            class="text-white gap-2 flex items-center text-xs font-semibold p-3 bg-indigo-600 rounded-md leading-normal"
+          >
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.5 11V5.5"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.5 3.5V1"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 11V8.5"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 6.5V1"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.5 11V5.5"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.5 3.5V1"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.5 5.5H3.5"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.5 5.5H10.5"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 6.5H7"
+                stroke="white"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span>Filters</span>
+          </button>
+        </div>
+      </div>
+      <!-- Navbar end -->
+
+      <div class="flex gap-3">
+        <div
+          id="table"
+          class="bg-white basis-[75%] max-h-[calc(100vh-100px)] h-fit !basis-[100%] rounded-lg overflow-hidden p-5"
+        >
+          <table class="table-auto w-full">
+            <thead
+              class="h-[45px] bg-gray-50 rounded-lg border border-gray-100"
+            >
+              <tr class="text-slate-600 space-x-7 text-xs font-semibold">
+                <th>User</th>
+                <th>Total payments</th>
+                <th>Total rides</th>
+                <th>Total finished</th>
+                <th>Home Address</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <!-- Dynamic table body -->
+            </tbody>
+          </table>
+          <div id="pagination" class="flex mt-5 items-center justify-end gap-1">
+            <button
+              class="w-[25px] h-7 flex items-center justify-center rounded-[3px] border border-gray-100"
+            >
+              <svg
+                width="6"
+                height="9"
+                viewBox="0 0 6 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.33075 0.999951L1.51855 4.59995L5.33075 8.19995"
+                  stroke="#C4C4C4"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              class="w-[25px] bg-indigo-600 text-white text-xs font-medium flex items-center justify-center h-7 rounded-[3px] border border-gray-100"
+            >
+              1
+            </button>
+            <button
+              class="w-[25px] text-slate-600 text-xs font-medium flex items-center justify-center h-7 rounded-[3px] border border-gray-100"
+            >
+              2
+            </button>
+            <button
+              class="w-[25px] h-7 flex items-center justify-center rounded-[3px] border border-gray-100"
+            >
+              <svg
+                width="6"
+                height="9"
+                viewBox="0 0 6 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.729309 8.2L4.5415 4.6L0.729309 1"
+                  stroke="#353849"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <form
+          id="filter-form"
+          class="block hidden basis-[25%] bg-white rounded-lg shadow"
+        >
+          <div class="border-b border-gray-200 gap-2 p-3 flex items-center">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.5 11V5.5"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.5 3.5V1"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 11V8.5"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 6.5V1"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.5 11V5.5"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.5 3.5V1"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.5 5.5H3.5"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.5 5.5H10.5"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 6.5H7"
+                stroke="#00140E"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span
+              class="text-gray-950 text-sm font-medium leading-7 tracking-wide"
+              >Filterlash</span
+            >
+          </div>
+          <div class="space-y-3 py-2 px-3">
+            <div>
+              <label
+                for="start-date"
+                class="block text-zinc-700 text-[10px] font-semibold tracking-wide mb-2"
+                >Muddatni tanlang</label
+              >
+              <div class="relative">
+                <input
+                  type="text"
+                  id="start-date"
+                  placeholder="dd/mm/yyyy"
+                  class="w-full border rounded-lg p-2 pl-10 text-zinc-700 text-[10px] font-semibold tracking-wide"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M6 2a1 1 0 00-1 1v1H5a2 2 0 00-2 2v11a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM5 8h10v9H5V8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="relative">
+                <input
+                  type="text"
+                  id="end-date"
+                  placeholder="dd/mm/yyyy"
+                  class="w-full border rounded-lg p-2 pl-10 text-zinc-700 text-[10px] font-semibold tracking-wide"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M6 2a1 1 0 00-1 1v1H5a2 2 0 00-2 2v11a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM5 8h10v9H5V8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label
+                for="total-rides"
+                class="block text-zinc-700 text-[10px] font-semibold tracking-wide mb-2"
+                >Total rides bo'yicha</label
+              >
+              <input
+                type="text"
+                id="total-rides"
+                class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+                placeholder=""
+              />
+            </div>
+            <div>
+              <label
+                for="total-finished"
+                class="block text-zinc-700 text-[10px] font-semibold tracking-wide mb-2"
+                >Total finished bo'yicha</label
+              >
+              <input
+                type="text"
+                id="total-finished"
+                class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+                placeholder=""
+              />
+            </div>
+            <div>
+              <label
+                for="home-location"
+                class="block text-zinc-700 text-[10px] font-semibold tracking-wide mb-2"
+                >Home Location Bo'yicha</label
+              >
+              <select
+                id="home-location"
+                class="w-full border rounded-lg p-2 text-zinc-700 text-[10px] font-semibold tracking-wide"
+              >
+                <option>Barchasi</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/clients/filter.js"></script>
+    <script src="../scripts/clients/index.js"></script>
+    <script src="../scripts/clients/create.js"></script>
+  </body>
+</html>
